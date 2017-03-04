@@ -1,4 +1,11 @@
 <div id='container' ng-app="shortly.links" ng-controller="LinksController"> 
+  <nav class='navigation'>
+  <ul>
+    <li><a href="./#/links">Links</a></li>
+    <li><a href="./#/shorten">Shorten</a></li>
+    <li><a href="./#/signin" ng-click="signOut()">Sign Out</a></li>
+  </ul>
+    </nav>
   <ul>
     <li class="link" ng-repeat="link in data.links"> 
       <a class="title" ng-href={{link.url}}>{{link.title}}
@@ -9,6 +16,4 @@
         </a>
     </li>
   </ul>
-
-
 </div>
