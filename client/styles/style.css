@@ -54,6 +54,7 @@ h1 {
 }
 
 .link {
+  list-style: none;
   clear: both;
   margin-bottom: 5px;
   padding: 5px;

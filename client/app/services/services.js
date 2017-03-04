@@ -17,6 +17,7 @@ angular.module('shortly.services', [])
       data: data
     })
     .then(function (res) {
+      console.log(res);
       return res;
     });
   };

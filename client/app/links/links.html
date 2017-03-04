@@ -1,6 +1,13 @@
 <div id='container' ng-app="shortly.links" ng-controller="LinksController"> 
   <ul>
-    <li> a word there </li>
+    <li class="link" ng-repeat="link in data.links"> 
+      <a class="title" ng-href={{link.url}}>{{link.title}}
+        <div class="visits"> 
+          <a class ="count">{{link.visits}}</a>
+            Visits
+          </div> 
+        </a>
+    </li>
   </ul>
 
 
