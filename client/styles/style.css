@@ -147,3 +147,6 @@ input[type=url]:focus {
   clear: both;
 }
 
+.ng-show {
+  float: right;
+}
